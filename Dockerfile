@@ -2,7 +2,7 @@
 FROM alpine
 
 # Set the working directory.
-WORKDIR /home/peacefield
+WORKDIR /home/SigBoiz
 
 # Install Python.
 RUN apk add python3
@@ -12,10 +12,10 @@ COPY backend.py backend.py
 COPY index.html index.html
 
 # Create a non-root user with no password (-D).
-RUN adduser -D peacefield -h /home/peacefield
+RUN adduser -D SigBoiz -h /home/SigBoiz
 
 # Set permissions.
-RUN chown -R peacefield:peacefield /home/peacefield
+RUN chown -R SigBoiz:SigBoiz /home/SigBoiz
 
 # Switch to a non-root user.
 USER peacefield
