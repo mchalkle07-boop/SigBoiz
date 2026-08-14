@@ -18,7 +18,7 @@ RUN adduser -D SigBoiz -h /home/SigBoiz
 RUN chown -R SigBoiz:SigBoiz /home/SigBoiz
 
 # Switch to a non-root user.
-USER peacefield
+USER SigBoiz
 
 # Identify what TCP port will be used by our server.
 EXPOSE 8000
